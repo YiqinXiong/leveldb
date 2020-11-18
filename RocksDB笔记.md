@@ -80,7 +80,7 @@ MemTable内部对于memkey按internal key进行排序，排序规则为：
 
 在基础链表上增加一层索引，就可以将查找量减半。
 
-<img src="https://pic2.zhimg.com/v2-c2c468617c753a721baee588cf574171_r.jpg" alt="preview" style="zoom: 67%;" />
+<img src="https://xyq6785665.oss-cn-shenzhen.aliyuncs.com/img/image-20201118225749968.png" alt="image-20201118225749968" style="zoom:67%;" />
 
 再递归建立索引，类似于构建搜索树。注意每次增加索引时**并不要求精准**地对搜索范围一分为二，只使用一个随机的概率规则来确定一个节点的高度。
 
